@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "32b01c35-129e-40b4-b405-a4e50fe376ca",
+		"name": "TRI7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Alan",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "WD Test",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "3",
+							"description": "Select 1,23 (1= manager, 2= web developer, 3= web designer)",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "text"
+						},
+						{
+							"key": "password_confirm",
+							"value": "P@ssw0rd",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "alan.padiernos3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/employee",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/api/employee/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/api/employee/9?username=alan.padiernos11&first_name=Alan2&last_name=pade&role",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						"9"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "alan.padiernos11"
+						},
+						{
+							"key": "first_name",
+							"value": "Alan2"
+						},
+						{
+							"key": "last_name",
+							"value": "pade"
+						},
+						{
+							"key": "role",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/employee/10",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/employee/9",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"employee",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

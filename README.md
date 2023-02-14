@@ -1,6 +1,6 @@
 # TRI7 Backend API
 
-[Codeigniter 4 Rest API (CRUD) ](https://github.com/deepfaith/sunmoontech-exam)
+[Codeigniter 4 Rest API (CRUD) ](https://github.com/deepfaith/tri7-exam)
 
 [Project Requirements](https://super7tech.com/web_developer_exam_sr/)
 
@@ -16,11 +16,11 @@ Please check the official laravel installation guide for server requirements bef
 
 Clone the repository
 
-    git clone https://github.com/deepfaith/sunmoontech-exam.git
+    git clone https://github.com/deepfaith/tri7-exam.git
 
 Switch to the repo folder
 
-    cd sunmoontech-exam-master
+    cd tri7-exam-main
 
 Install all the dependencies using composer
 
@@ -72,13 +72,13 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone https://github.com/deepfaith/sunmoontech-exam.git
-    cd sunmoontech-exam-master
+    git clone https://github.com/deepfaith/tri7-exam.git
+    cd tri7-exam-main
     composer update
     composer install
     Configure .env variables
 
-**Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
+**Make sure you set the correct database connection information before running the migrations** [Environment variables](#Installation)
 
     php spark migrate
 
@@ -90,9 +90,10 @@ You can now access the server at http://localhost:8000
 The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
 
 ## API Specification
+You can also import the postman collection used in this project thru this [link](http://localhost:8000/api).
 
 
-> [Full API Spec](https://github.com/deepfaith/sunmoontech-exam/tree/master/Modules)
+> [Full API Spec](https://github.com/deepfaith/tri7-exam/tree/main/app/Libraries/Api)
 
 ----------
 
