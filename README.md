@@ -90,7 +90,7 @@ You can now access the server at http://localhost:8000
 The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
 
 ## API Specification
-You can also import the postman collection used in this project thru this [link](http://localhost:8000/api).
+You can also import the postman collection used in this project thru this [link](https://github.com/deepfaith/tri7-exam/tree/main/public/Postman).
 
 
 > [Full API Spec](https://github.com/deepfaith/tri7-exam/tree/main/app/Libraries/Api)
