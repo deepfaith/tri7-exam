@@ -24,7 +24,7 @@ trait CrudGuardTrait
         $token = $this->request->getServer('HTTP_AUTHORIZATION');
         $this->userloggedin = GenerateToken::decode_jwt($token);
         $this->userloggedinRole = json_decode($this->userloggedin->sub)->role;
-        $this->userRoleToUpdate = $this->userloggedinRole;
+        $this->userRoleToUpdate = $this->userloggedinRole  != 1 ? $this->userloggedinRole : null;
     }
 
 }

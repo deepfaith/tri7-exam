@@ -20,7 +20,7 @@ trait CrudSqlQueryTrait
             ->select($selectString);
 
         //filter users by role
-        if( $this->userRoleToUpdate ){
+        if( isset($this->userRoleToUpdate) ){
             $user->where('user.role',$this->userRoleToUpdate);
         }
         return $user;
